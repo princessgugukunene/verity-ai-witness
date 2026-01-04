@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verity - AI Witness System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>⚖️ Verity</h1>
+            <p>Unbiased AI Witness for Crime Scene Analysis</p>
+        </header>
+
+        <!-- Upload Section -->
+        <div class="upload-section">
+            <h2>Upload Video Evidence</h2>
+            <input type="file" id="videoInput" accept="video/*">
+            <button id="analyzeBtn" onclick="analyzeVideo()">Analyze Video</button>
+        </div>
+
+        <!-- Video Preview -->
+        <div class="video-preview" id="videoPreview" style="display:none;">
+            <h3>Video Preview</h3>
+            <video id="videoPlayer" controls></video>
+        </div>
+
+        <!-- Loading State -->
+        <div class="loading" id="loading" style="display:none;">
+            <div class="spinner"></div>
+            <p>Analyzing video with Gemini 3 AI...</p>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results" id="results" style="display:none;">
+            <h2>Analysis Results</h2>
+            
+            <div class="result-card">
+                <h3>📅 Timeline</h3>
+                <div id="timeline"></div>
+            </div>
+
+            <div class="result-card">
+                <h3>👥 Individuals Identified</h3>
+                <div id="individuals"></div>
+            </div>
+
+            <div class="result-card">
+                <h3>🎬 Actions</h3>
+                <div id="actions"></div>
+            </div>
+
+            <div class="result-card">
+                <h3>🎤 Audio Transcript</h3>
+                <div id="transcript"></div>
+            </div>
+
+            <div class="result-card warning">
+                <h3>⚠️ Contradictions Detected</h3>
+                <div id="contradictions"></div>
+            </div>
+
+            <div class="result-card">
+                <h3>❓ Investigation Questions</h3>
+                <div id="questions"></div>
+            </div>
+
+            <button onclick="exportReport()">📄 Export Report</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
