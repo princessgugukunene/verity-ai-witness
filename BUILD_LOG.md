@@ -1,6 +1,6 @@
-# Verity - Build Log
+# Verity AI Witness - Build Log
 
-## Day 1 - January 3, 2026
+## Day 1 - January 4, 2026
 
 ### What I Did:
 - Created GitHub repository
@@ -17,27 +17,25 @@
 - Learning Git for the first time
 - Setting up development environment
 
+## Day 1 - [18:00 pm] 
+
+### ✅ COMPLETED:
+- GitHub repository created and files pushed
+- Basic HTML interface built
+- CSS styling applied and looks professional
+- Video upload functionality working
+- Mock analysis results displaying
+- Loading states working
+
+### 📸 Screenshots Taken:
+- Website interface working - GitHub repository with all files
+
+### ⏭️ NEXT STEPS:
+- Connect to real Gemini 3 API
+- Send actual video for analysis
+- Parse real API responses
+- Display formatted results
+
+### ⏱️ Time Spent Today: ~2 hours
+
 ---
-```
-
-**Press `Ctrl + S`** to save
-
----
-
-**Click on `.gitignore`** and **paste this:**
-```
-# API Keys (NEVER commit these!)
-config.js
-gemini-api-key.txt
-.env
-
-# System files
-.DS_Store
-Thumbs.db
-
-# Node modules (if you use npm later)
-node_modules/
-
-# Test files
-test-videos/
-evidence/
